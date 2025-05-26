@@ -1,13 +1,14 @@
 .flex-container {
   display: flex; 
   flex-direction: column;
-
+    gap: 8px;
 } 
 .flex-container-nested {
   display: flex; 
   flex-direction: row-reverse;
   overflow: scroll;
   flex: 1;
+  justify-content: space-around;
 } 
 
 /* this selector selects all divs inside of .flex-container */
@@ -22,12 +23,14 @@
     border: 4px solid red;
     height: 100px;
     flex: 1;
+    flex-basis: auto;
 }
 .flex-container div.two{
     background-color: lightgreen;
     border: 4px solid green;
     height: 100px;
     flex: 1;
+    flex-basis: auto;
 
 }
 .flex-container div.three{
@@ -35,6 +38,7 @@
     border: 4px solid blue;
     height: 100px;
     flex: 1;
+    flex-basis: auto;
  
 }
 div.one .nested{
@@ -42,6 +46,7 @@ div.one .nested{
     background-color: red;
     border: solid white;
     height: 100px;
-    flex: 5 5 0
+    width: 50px;
+    align-items: space-around;
     
 }
