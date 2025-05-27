@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+}
+
+/* My contributions */
+ul{
+    /* removes the bullet points */
+    list-style-type: none;
+}
+a{
+    color:black;
+}
+.header,.footer{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    /* sets header and footer to spread content to left and right side */
+}
+.footer{
+    background: #eeeeee;
+}
+.left-links,.right-links{
+    display: flex;
+    gap: 20px;
+}
+
+.content .buttons { 
+    /* targets the box that contains buttons, underneath search*/
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.content .input{
+    /* targets the search bar */
+    display: flex;
+    justify-content: center;
+    
+}
+.content .buttons button{
+    padding: 8px 16px;
+}
+
+
+/* provided by solution, more condensed, general version of what I did
+    my content justification was across .content buttons and input
+    I lacked general gapping for content
+*/
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
